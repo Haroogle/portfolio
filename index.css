@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(images/synthwave-g11a1e230e_1920.jpg);
+  background-size: fill;
+  background-repeat: no-repeat;
+}
+nav {
+  height: 950px;
+}
+.main-nav {
+  list-style: none;
+}
+
+li {
+  display: inline;
+  float: inline-end;
+  margin: 20px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  font-size: 18px;
+  font-family: "Vibur", sans-serif;
+  background-color: #e96ecc5c;
+  border-radius: 2px;
+}
