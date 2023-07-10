@@ -6,9 +6,11 @@ body {
   background-image: url(images/synthwave-g11a1e230e_1920.jpg);
   background-size: fill;
   background-repeat: no-repeat;
+  position: relative;
 }
 nav {
-  height: 950px;
+  height: 200px;
+  position: relative;
 }
 .main-nav {
   list-style: none;
@@ -23,6 +25,24 @@ li {
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
   font-size: 18px;
   font-family: "Vibur", sans-serif;
-  background-color: #e96ecc5c;
+  background-color: #360c2cb8;
+  border-radius: 5px;
+}
+
+li :hover {
+  background-color: #ab3b91d5;
   border-radius: 2px;
+}
+
+#home h1 {
+  text-align: center;
+  margin: 0 auto;
+  color: #921d77be;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  font-size: 50px;
+  font-family: "Vibur", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+
+  border-radius: 5px;
 }
