@@ -4,24 +4,164 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+
     <title>portfolio</title>
   </head>
   <body>
-    <nav>
+    <nav id="home">
       <ul class="main-nav">
-        <li>
-          <img src="images/contactme.png" alt="Contact Me" />
-        </li>
-        <li><img src="images/projects.png" alt="Projects" /></li>
-        <li><img src="images/aboutme.png" alt="About Me" /></li>
-        <li><img src="images/home.png" alt="Home" href="#home" /></li>
+        <li><a href="">Contact Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#home">Home</a></li>
       </ul>
     </nav>
-    <main id="home">
+    <main>
       <h1>Haroun Anwari: Software Developer</h1>
+      <image
+        src="images/pexels-bert-5985264.jpg"
+        alt="80s computer"
+        class="center"
+        width="500px"
+        height="600px"
+      ></image>
     </main>
-    <article id="about me">
-      <p></p>
-    </article>
+    <section class="aboutme">
+      <h2 id="aboutme">About Me</h2>
+      <p>
+        Hi, I'm Haroun and I'm a full stack developer. Since I was young, I've
+        always been interested in problem solving. I would always be putting up
+        my hand in class to answer both class and random trivia questions, to
+        the point my nickname became haroogle(Portmanteau of my name and
+        google). This has evolved over the years to become more digital in
+        nature and bring me to coding which brought me to a 6 month bootcamp at
+        <a href="https://boolean.co.uk/" target="_blank" /> Boolean UK
+        <a /> where I learnt
+      </p>
+      <div>
+        <img
+          src="images/css3-plain-wordmark.svg"
+          title="CSS3"
+          alt="CSS"
+          width="50"
+          height="50"
+        />
+        <img
+          src="images/react-original-wordmark.svg"
+          title="React"
+          alt="React"
+          width="50"
+          height="50"
+        />
+        <img
+          src="images/html5-original.svg"
+          title="HTML5"
+          alt="HTML"
+          width="50"
+          height="50"
+        />
+        <img
+          src="images/javascript-original.svg"
+          title="JavaScript"
+          alt="JavaScript"
+          width="50"
+          height="50"
+        />
+        <img
+          src="images/nodejs-original-wordmark.svg"
+          title="NodeJS"
+          alt="NodeJS"
+          width="50"
+          height="50"
+        />
+        <img
+          src="images/git-original-wordmark.svg"
+          title="Git"
+          alt="Git"
+          width="50"
+          height="50"
+        />
+        <img
+          src="images/express-original-wordmark.svg"
+          title="Express"
+          alt="Express"
+          width="50"
+          height="50"
+        />
+        <img
+          src="images/jasmine-plain-wordmark.svg"
+          title="Jasmine"
+          alt="Jasmine"
+          width="50"
+          height="50"
+        />
+        <img
+          src="images/postgresql-original-wordmark.svg"
+          title="postgreSQL"
+          alt="postgresSQL"
+          width="50"
+          height="50"
+        />
+      </div>
+    </section>
+    <section class="projects">
+      <h2 id="projects">Projects</h2>
+    </section>
+    <section class="contactme">
+      <h2 id="contactme">Contact Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>&copy; 2023 HAnwari</footer>
   </body>
 </html>
