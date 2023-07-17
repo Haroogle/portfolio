@@ -10,6 +10,7 @@ body {
   background-size: cover;
 
   position: relative;
+  font-family: "Tilt Neon", cursive;
 }
 nav {
   height: 200px;
@@ -35,7 +36,6 @@ nav {
   color: transparent;
   text-shadow: -3px 5px 3px rgb(61, 182, 247);
   font-size: 50px;
-  font-family: "Tilt Neon", cursive;
 
   border-radius: 5px;
 }
@@ -66,8 +66,7 @@ main h1 {
   color: #6b10a4;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
-  font-size: 60px;
-  font-family: "Tilt Neon", cursive;
+  font-size: 50px;
 
   border-radius: 5px;
 }
@@ -89,7 +88,6 @@ main {
 .aboutme {
   margin-top: 10%;
   color: #d2e962;
-  font-family: "Tilt Neon", cursive;
 }
 h2 {
   text-align: center;
@@ -99,13 +97,14 @@ h2 {
   color: #6b10a4;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
-  font-family: "Tilt Neon", cursive;
 }
 
 .aboutme p {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 30px;
   margin: 20px;
+  background-color: #020ef158;
+  border-radius: 5px;
 }
 a:visited {
   color: #d2e962;
@@ -119,7 +118,6 @@ a:visited {
 }
 
 .contact-form-container {
-  font-family: "Tilt Neon", cursive;
   max-width: 30%;
   margin: 0 auto;
   padding: 30px;
@@ -135,6 +133,7 @@ a:visited {
 .contact-form-container textarea {
   min-height: 6.25rem;
   font-size: 14px;
+  background-color: #9752c2;
 }
 
 .contact-form-container .input-field {
@@ -146,6 +145,7 @@ a:visited {
   border: 2px outset #0410f6e6;
   font-size: 15px;
   outline: none;
+  background-color: #9752c2;
 }
 
 .input-field::placeholder {
@@ -157,16 +157,35 @@ a:visited {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  background-color: #fff;
-  border: 2px solid var(--primary-color);
+  color: #d2e962;
+  background-color: #020ef1;
+  border: 2px solid #020ef1;
   border-radius: 5px;
   font-size: 1rem;
-  font-weight: var(--bold-font);
-  transition: var(--transition);
+  font-family: "Tilt Neon", cursive;
 }
 
 .submit-btn:hover {
-  background-color: var(--primary-color);
-  border: 2px solid var(--primary-color);
+  background-color: #6b10a4;
+  border: 2px solid #020ef1;
   cursor: pointer;
+}
+.socials {
+  width: 400px;
+  color: #d2e962;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+.sociallogos {
+  margin-right: 10px;
+  margin-left: 80px;
+}
+h4 {
+  display: inline;
+  font-size: 1.5rem;
+}
+footer {
+  text-align: center;
+  color: #6b10a4;
 }
