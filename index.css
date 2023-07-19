@@ -171,16 +171,17 @@ a:visited {
   cursor: pointer;
 }
 .socials {
-  width: 400px;
+  width: 100%;
   color: #d2e962;
   margin: 50px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 .sociallogos {
-  margin-right: 10px;
-  margin-left: 80px;
+  margin-right: 80px;
 }
+
 h4 {
   display: inline;
   font-size: 1.5rem;
