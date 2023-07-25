@@ -18,6 +18,7 @@ nav {
 .main-nav {
   list-style: none;
   position: fixed;
+  z-index: 1;
   width: 100%;
   border-bottom: 5px solid #3230cdd7;
   background-color: #6b10a4ab;
@@ -121,13 +122,51 @@ a:visited {
   gap: 50px;
 }
 .project {
+  position: relative;
+  display: grid;
+  grid-template-rows: 80% 20%;
+  justify-items: center;
   margin: 30px;
   width: 400px;
   height: 600px;
   border-radius: 40px;
-  background-color: #6b10a4;
+  background-color: #1a78b797;
+}
+.project-pic {
+  display: block;
+  margin: 20px;
+  border-radius: 30px;
 }
 
+.overlay {
+  position: absolute;
+  top: 20px;
+  bottom: 2;
+  left: 5%;
+  right: 0;
+  width: 90%;
+  height: 70%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+  border-radius: 20px;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 .contact-form-container {
   max-width: 30%;
   margin: 0 auto;
