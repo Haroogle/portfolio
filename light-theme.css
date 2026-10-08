@@ -6,11 +6,26 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: url(images/synthwave-g11a1e230e_1920.jpg);
+  background-image: url(images/mxj_files-vaporwave-9311756.png);
   background-size: cover;
 
   position: relative;
-  font-family: "Tilt Neon", cursive;
+  font-family: "Syne", sans-serif;
+  font-weight: 500;
+  letter-spacing: -2px;
+  text-transform: none;
+}
+.text-effect {
+  display: inline-block;
+  color: hsl(113 70% 72%);
+  transform: perspective(520px) rotateX(16deg) rotateY(-10deg);
+  transform-style: preserve-3d;
+  text-shadow:
+    -1px 1px 0 hsl(113 50% 30%),
+    -2px 2px 0 hsl(113 50% 30%),
+    -3px 3px 0 hsl(113 50% 30%),
+    -4px 4px 0 hsl(113 50% 30%),
+    -5px 5px 0 hsl(113 50% 30%);
 }
 nav {
   height: 200px;
@@ -20,8 +35,8 @@ nav {
   position: fixed;
   z-index: 1;
   width: 100%;
-  border-bottom: 5px solid #3230cdd7;
-  background-color: #6b10a4ab;
+  border-bottom: 5px solid #58ea62d7;
+  background-color: #e3fc7ce4;
 }
 .main-nav li {
   float: right;
@@ -31,11 +46,11 @@ nav {
   display: flex;
   text-align: center;
   margin: 20px;
-  background: #323cf3;
-  background: linear-gradient(to bottom, #323cf3 0%, #ed13f8e6 100%);
+  background: #bc32f3;
+  background: linear-gradient(to bottom, #1aef0a 0%, #bee548e6 100%);
   background-clip: text;
   color: transparent;
-  text-shadow: -3px 5px 3px rgb(61, 182, 247);
+  text-shadow: -3px 5px 3px rgb(61, 247, 170);
   font-size: 50px;
 
   border-radius: 5px;
@@ -46,7 +61,7 @@ nav {
   height: 80px;
   top: 10px;
   bottom: 10px;
-  display: flex;
+  display: block;
   background: #0b0f56;
   border-radius: 100px;
   cursor: pointer;
@@ -57,15 +72,15 @@ nav {
 
 .main-nav li label:after {
   content: "";
-  position: relative;
+  position: absolute;
   height: 60px;
   width: 60px;
-  background: #582dc5;
+  background: #2db1c5;
   border-radius: 100px;
   top: 10px;
   left: 10px;
   transition: 0.5s;
-  box-shadow: 0 5px 10px rgb(141, 78, 223);
+  box-shadow: 0 5px 10px rgb(78, 209, 223);
 }
 input:checked ~ label:after {
   left: 190px;
@@ -73,26 +88,14 @@ input:checked ~ label:after {
   background: linear-gradient(180deg, #39dc72, #5dbb35);
 }
 input:checked ~ label {
-  background: #bacf76c9;
+  background: #bbf109c9;
 }
 .main-nav li input {
   display: none;
 }
-/*li a {
-  display: inline;
-  float: inline-end;
-  margin: 20px;
-  color: #9213dc;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
-  font-size: 30px;
-  font-family: "Tilt Neon", cursive;
-  background-color: #360c2cb8;
-  border-radius: 5px;
-}*/
 
 .main-nav li :not(label):hover {
-  background: #7b35826b;
+  background: #0764206b;
   padding-left: 2px;
   padding-right: 2px;
   border-radius: 8px;
@@ -101,7 +104,7 @@ input:checked ~ label {
 main h1 {
   text-align: center;
   margin: 0 auto;
-  color: #6b10a4;
+  color: #23db29;
   text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
@@ -145,7 +148,7 @@ h2 {
   margin: 0 auto;
   margin-top: 10%;
   font-size: 40px;
-  color: #6b10a4;
+  color: #10a41a;
   text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
@@ -161,7 +164,7 @@ h2 {
   text-align: center;
   font-size: 30px;
   margin: 20px;
-  background-color: #020ef158;
+  background-color: #42aae2e7;
   border-radius: 5px;
 }
 a:visited {
@@ -229,8 +232,8 @@ a:visited {
   margin: 0 auto;
   padding: 30px;
   border-radius: 5px;
-  box-shadow: 0 3px 10px #6b10a4;
-  color: #d2e962;
+  box-shadow: 0 3px 10px #9dca07;
+  color: #44f847;
 }
 
 .contact-form-container label {
@@ -240,7 +243,7 @@ a:visited {
 .contact-form-container textarea {
   min-height: 6.25rem;
   font-size: 14px;
-  background-color: #9752c2;
+  background-color: #3af0f3;
 }
 
 .contact-form-container .input-field {
@@ -249,10 +252,10 @@ a:visited {
   padding-bottom: 10px;
   border-radius: 5px;
   border: none;
-  border: 2px outset #0410f6e6;
+  border: 2px outset #1bcae9e6;
   font-size: 15px;
   outline: none;
-  background-color: #9752c2;
+  background-color: #6cc252;
 }
 
 .input-field::placeholder {
@@ -265,16 +268,16 @@ a:visited {
   padding: 10px;
   margin: 10px 0;
   color: #d2e962;
-  background-color: #020ef1;
-  border: 2px solid #020ef1;
+  background-color: #31dbee;
+  border: 2px solid #02c5f1;
   border-radius: 5px;
   font-size: 1rem;
-  font-family: "Tilt Neon", cursive;
+  font-family: "Syne", sans-serif;
 }
 
 .submit-btn:hover {
-  background-color: #6b10a4;
-  border: 2px solid #020ef1;
+  background-color: #55a410;
+  border: 2px solid #d6ee51;
   cursor: pointer;
 }
 .socials {
@@ -295,5 +298,5 @@ h4 {
 }
 footer {
   text-align: center;
-  color: #6b10a4;
+  color: #09ed86;
 }
